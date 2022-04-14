@@ -19,4 +19,11 @@ class Person {
     }
 }
 
-let amjad = new Person('Amjad' ,  27 ,Gender.male , true)
+
+class ITPerson extends Person {
+    dept: string
+    constructor (name: string ,  age: number ,  gender : Gender,  isAllowed: Boolean , dept: string) {
+        super(name , age , gender , isAllowed)
+        this.dept = dept
+    }
+}
